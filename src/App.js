@@ -12,7 +12,7 @@ function App() {
     setCartIsShown(true);
   }
 
-  function hideCarHandler(){
+  function hideCartHandler(){
     setCartIsShown(false);
   }
 
@@ -21,7 +21,7 @@ function App() {
 
   return (
     <CartProvider>
-      {cartIsShown && <Cart onClose={hideCartHeadler} />}
+      {cartIsShown && <Cart onClose={hideCartHandler} />}
       <Header onShowCart={showCartHandler}/>
       <main>
         <Meals />
